@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Ansu Dimension</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#111827;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#cbd5e1;
+}
+
+.gallery{
+    padding:60px 8%;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.gallery-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(56,189,248,0.4);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.gallery-content{
+    padding:20px;
+}
+
+.gallery-content h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.gallery-content p{
+    color:#cbd5e1;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Ansu Dimension</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Our Gallery</h1>
+    <p>Explore our AI creations, videos, digital products and creative projects.</p>
+</section>
+
+<section class="gallery">
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=1" alt="AI Video">
+            <div class="gallery-content">
+                <h3>AI Video Project</h3>
+                <p>Professional AI-generated promotional video.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=2" alt="YouTube">
+            <div class="gallery-content">
+                <h3>YouTube Content</h3>
+                <p>Creative content produced for online audiences.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=3" alt="TikTok">
+            <div class="gallery-content">
+                <h3>TikTok Shorts</h3>
+                <p>Short-form video content optimized for engagement.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=4" alt="Digital Product">
+            <div class="gallery-content">
+                <h3>Digital Product</h3>
+                <p>Creative templates and downloadable resources.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=5" alt="Creative Design">
+            <div class="gallery-content">
+                <h3>Creative Design</h3>
+                <p>Modern graphic and branding design projects.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://picsum.photos/600/400?random=6" alt="Business Project">
+            <div class="gallery-content">
+                <h3>Business Project</h3>
+                <p>Digital marketing and online business solutions.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Ansu Dimension | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

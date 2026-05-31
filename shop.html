@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | Ansu Dimension</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    background:#111827;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    text-align:center;
+    padding:70px 20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#cbd5e1;
+}
+
+.shop-container{
+    padding:60px 8%;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.product-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-content{
+    padding:20px;
+}
+
+.product-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#38bdf8;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.btn{
+    background:#38bdf8;
+    color:black;
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">Ansu Dimension</div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Our Shop</h1>
+    <p>Explore Digital Products, AI Services, Flowers & Gifts</p>
+</section>
+
+<section class="shop-container">
+
+<div class="products">
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800"
+             class="product-image" alt="AI Video">
+
+        <div class="product-content">
+            <h3>AI Video Package</h3>
+            <p>Professional AI-generated video creation service.</p>
+            <div class="price">$25</div>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+             class="product-image" alt="Digital Product">
+
+        <div class="product-content">
+            <h3>Digital Product Bundle</h3>
+            <p>Templates, designs and digital resources.</p>
+            <div class="price">$15</div>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=800"
+             class="product-image" alt="Flowers">
+
+        <div class="product-content">
+            <h3>Flower Bouquet</h3>
+            <p>Beautiful flowers for special occasions.</p>
+            <div class="price">$12</div>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=800"
+             class="product-image" alt="Gift">
+
+        <div class="product-content">
+            <h3>Gift Box</h3>
+            <p>Creative gift packs for your loved ones.</p>
+            <div class="price">$18</div>
+            <button class="btn">Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Ansu Dimension | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

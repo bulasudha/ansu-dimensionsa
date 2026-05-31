@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansu Dimension</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        header{
+            background:#111827;
+            padding:20px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+            color:#38bdf8;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            min-height:90vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            flex-direction:column;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero span{
+            color:#38bdf8;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin-bottom:30px;
+            line-height:1.8;
+        }
+
+        .btn{
+            background:#38bdf8;
+            color:black;
+            padding:15px 35px;
+            border:none;
+            border-radius:30px;
+            cursor:pointer;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+        }
+
+        .services{
+            padding:80px 8%;
+            text-align:center;
+        }
+
+        .services h2{
+            margin-bottom:40px;
+            font-size:40px;
+        }
+
+        .cards{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:25px;
+        }
+
+        .card{
+            background:#1e293b;
+            width:300px;
+            padding:25px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        footer{
+            background:#111827;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Ansu Dimension</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to <span>Ansu Dimension</span></h1>
+
+    <p>
+        Creating AI Videos, YouTube Content, TikTok Shorts,
+        Digital Products and Creative Online Solutions.
+    </p>
+
+    <button class="btn">Explore More</button>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>AI Video Creation</h3>
+            <br>
+            <p>Create stunning AI generated videos for social media.</p>
+        </div>
+
+        <div class="card">
+            <h3>YouTube Content</h3>
+            <br>
+            <p>Professional content creation for YouTube channels.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Products</h3>
+            <br>
+            <p>Sell and promote digital products and creative items.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Ansu Dimension. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
